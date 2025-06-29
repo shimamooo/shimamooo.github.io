@@ -11,4 +11,6 @@ Hi! I'm a student studying Computer Science and Mathematics at Berkeley. I'm bro
 
 At school, I enjoy teaching and am part of course staff for Discrete Math and Probability Theory.
 
-I'm currently doing research in LLM efficiency and learning strategies in parallelization, early exit, MoE, and complexity metrics.
+I'm currently wrapping up research in LLM efficiency and learning strategies in parallelization, early exit, MoE, and complexity metrics.
+
+I've gone through the ![Arena AI Safety coursework](https://arena-chapter1-transformer-interp.streamlit.app/), a course covering the basics of Mechanistic Interpretability for AI and practical skills such as Wandb, TransformerLens, OpenAI Gymnasium, PPO, and RLHF. I'm currently looking to contribute to a research group for the last two years of my undergrad.
