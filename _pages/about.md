@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a student studying Computer Science and Mathematics at Berkeley. I'm generally interested in Vision Language Models and Mechanistic Interpretability, spending my days exploring rabbit holes in a somewhat-rigorous manner. In my blog, I like to write about whatever piques my curiosity.
+Hi! I'm a student studying Computer Science and Mathematics at UC Berkeley. I'm generally interested in Vision Language Models and Mechanistic Interpretability, spending my days exploring rabbit holes in a somewhat-rigorous manner. In my blog, I like to write about whatever piques my curiosity.
 
 This summer, I'm researching LLM efficiency and learning strategies in parallelization, heterogeneous MoE, and complexity-informed routing, advised by Vasu Sharma (FAIR Lead). Previously I was fortunate to be advised by Sanjit Seshia.
 
