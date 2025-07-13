@@ -35,17 +35,17 @@ $$D_{KL}(P \parallel Q) = H(P, Q) - H(P)$$
 
 ### Minimizing KL Divergence is Equivalent to Minimizing Cross-Entropy
 
-In many statistical modeling scenarios, we want to train a model distribution, $$P(x \vert \theta)$$, to be as close as possible to the true underlying data distribution, $$P_\text{data}$$. In other words we want to minimize $$D_{KL}(P_\text{data} \parallel P(x \vert \theta))$$. In practice, however, we don't know the true underlying data distribution: for one, it may not follow our model distribution, and we can only estimate it with a finite sample. Thus, we write $$\hat{P}_\text{data}$$ instead of $$P_\text{data}$$ to denote that it is an estimate of the data distribution. Usually, we'd use something like the Empirical Distribution as the estimator.
+In many statistical modeling scenarios, we want to train a model distribution, $$P(x \vert \theta)$$, to be as close as possible to the true underlying data distribution, $$P_\text{data}$$. In other words we want to minimize $$D_{KL}(P_\text{data} \parallel P(x \vert \theta))$$. In practice, however, we don't know the true underlying data distribution: for one, it may not follow our model distribution, and we can only estimate it with a finite sample. Thus, we write $$\hat{P}_\text{data}$$ instead of $$P_\text{data}$$ to denote that it is an estimate of the data distribution. We can use something like the Empirical Distribution as the estimator.
 
-If we consider the expression for KL Divergence, we can see that the entropy of the true data distribution, $H(P)$, is a constant that doesn't depend on. We can't change the entropy of the data itself. Therefore, minimizing the KL Divergence between our model and the data is equivalent to minimizing the cross-entropy between them.
+If we consider the expression for KL Divergence, we can see that the entropy of the true data distribution, $$H(P)$$, is a constant that doesn't depend on. We can't change the entropy of the data itself. Therefore, minimizing the KL Divergence between our model and the data is equivalent to minimizing the cross-entropy between them.
 
-$$\arg\min_{Q} D_{KL}(P \parallel Q) = \arg\min_{Q} [H(P, Q) - H(P)] = \arg\min_{Q} H(P, Q)$$
+$$\arg\min_{\theta} D_{KL}(P \parallel Q) = \arg\min_{\theta} [H(P, Q) - H(P)] = \arg\min_{\theta} H(P, Q)$$
 
 ### Minimizing Cross-Entropy is Equivalent to Maximizing Likelihood
 
-Now, let's connect this to Maximum Likelihood Estimation. In a typical machine learning problem, we have a dataset $D = \{x_i\}_{i=1}^n$ sampled from the true data distribution, which we'll call $P_{\text{data}}$. Our model is a parameterized distribution, $P(x \vert \theta)$. We want to find the parameters $\theta$ that make our model best fit the data.
+Now, let's connect this to Maximum Likelihood Estimation. In a typical machine learning problem, we have a dataset $$D = \{x_i\}_{i=1}^n$$ sampled from the true data distribution, which we'll call $$P_{\text{data}}$$. Our model is a parameterized distribution, $$P(x \vert \theta)$$. We want to find the parameters $$\theta$$ that make our model best fit the data.
 
-We can frame this as minimizing the KL Divergence between the empirical distribution of our data, $\hat{P}_{\text{data}}$, and our model, $P(x \vert \theta)$.
+We can frame this as minimizing the KL Divergence between the empirical distribution of our data, $$\hat{P}_{\text{data}}$$, and our model, $$P(x \vert \theta)$$.
 
 $$\arg\min_{\theta} D_{KL}(\hat{P}_{\text{data}} \parallel P(x \vert \theta))$$
 
@@ -57,7 +57,7 @@ Let's write out the definition of cross-entropy:
 
 $$H(\hat{P}_{\text{data}}, P(x \vert \theta)) = - \sum_{i=1}^{n} \hat{P}_{\text{data}}(x_i) \log P(x_i \vert \theta)$$
 
-For an empirical distribution from a dataset, $\hat{P}_{\text{data}}(x_i)$ is simply $\frac{1}{n}$ for each observed data point $x_i$. So, we can rewrite the expression as:
+For an empirical distribution from a dataset, $$\hat{P}_{\text{data}}(x_i)$$ is simply $$\frac{1}{n}$$ for each observed data point $$x_i$$. So, we can rewrite the expression as:
 
 $$
 \begin{align*}
@@ -70,7 +70,7 @@ Using the properties of logarithms, we can bring the sum inside the log as a pro
 
 $$\arg\max_{\theta} \frac{1}{n} \log \prod_{i=1}^{n} P(x_i \vert \theta)$$
 
-Since the logarithm is a monotonic function, maximizing the log of a function is the same as maximizing the function itself. The $\frac{1}{n}$ term is a constant, so we can also drop it. This leaves us with:
+Since the logarithm is a monotonic function, maximizing the log of a function is the same as maximizing the function itself. The $$\frac{1}{n}$$ term is a constant, so we can also drop it. This leaves us with:
 
 $$\arg\max_{\theta} \prod_{i=1}^{n} P(x_i \vert \theta)$$
 
