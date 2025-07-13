@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a student studying Computer Science and Mathematics at Berkeley. I'm generally interested in Multimodal Understanding and Mechanistic Interpretability, spending my days exploring rabbit holes in a somewhat-rigorous manner. In my blog, I like to write about whatever piques my curiosity.
+Hi! I'm a student studying Computer Science and Mathematics at Berkeley. I'm generally interested in Vision Language Models and Mechanistic Interpretability, spending my days exploring rabbit holes in a somewhat-rigorous manner. In my blog, I like to write about whatever piques my curiosity.
 
-At school, I enjoy teaching CS 70 Discrete Math and Probability Theory and will be a uGSI. I also cofounded Berkeley's largest AI startup incubator, AI Entrepreneurs at Berkeley, as Director of Tech. In just 2 years, our startups have raised $15M+ in venture capital from firms like PearVC and Seqouia and partnered with leading names like Gradescope and Y Combinator.
+At school, I enjoy teaching CS 70 Discrete Math and Probability Theory and will be an undergraduate student instructor next Fall. I also cofounded Berkeley's largest AI startup incubator, AI Entrepreneurs at Berkeley, as Director of Tech. In just 2 years, our startups have raised $15M+ in venture capital from firms like PearVC and Seqouia and partnered with leading names like Gradescope and Y Combinator.
 
 This summer, I'm researching LLM efficiency and learning strategies in parallelization, heterogeneous MoE, and complexity-informed routing, advised by Vasu Sharma (Meta) and Sanjit Seshia (Berkeley).
 
