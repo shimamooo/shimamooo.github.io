@@ -74,6 +74,6 @@ Since the logarithm is a monotonic function, maximizing the log of a function is
 
 $$\arg\max_{\theta} \prod_{i=1}^{n} P(x_i \vert \theta)$$
 
-This final expression is the **Maximum Likelihood Estimate** of the parameters $$\theta$$. It represents finding the parameters that maximize the probability of observing our given data.
+This final expression is the **Maximum Likelihood Estimate** of the parameters $$\theta$$. The MLE finds the parameters that maximize the probability of observing our given data.
 
 Therefore, we have shown that minimizing the KL Divergence between our model and the data distribution is equivalent to minimizing the cross-entropy, which in turn is equivalent to maximizing the likelihood of the data.
